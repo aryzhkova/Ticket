@@ -107,7 +107,7 @@ $(document).ready(function() {
             $('#returnDate').focus();
         }
     });
-    ////////////// hide on click outsid dd, nav-group
+    ////////////// hide on click outside dd, nav-group
 
     function hideOnClickOutside(e) {
         if (!$(e.target).closest('.nav-group__item').length) {
@@ -132,13 +132,13 @@ $(document).ready(function() {
         hideOnClickOutside(e);
     });
 
-    ////////////checkbox checked "Return date" set disable
+    ////////////checkbox false "Return date" set disable
 
     $('.form-search__checkbox').change(function () {
         if ($(this).prop("checked") == true) {
-            $('#returnDate').prop("disabled", true);
-        } else {
             $('#returnDate').prop("disabled", false);
+        } else {
+            $('#returnDate').prop("disabled", true);
         }
     });
     //////////// set example in input

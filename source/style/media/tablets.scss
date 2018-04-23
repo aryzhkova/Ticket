@@ -1,0 +1,62 @@
+@media screen and (max-width: 768px ) {
+  .container {
+    width:480px;
+  }
+  .nav__hamburger{
+    font-size: 11px;
+  }
+  .nav-group__item_position_vertical{
+    font-size: 11px;
+  }
+  .login{
+    font-size: 11px;
+  }
+  .nav__link-title{
+    font-size: 12px;
+  }
+  .section-search{
+    padding: 10px 0 35px 0;
+  }
+  .title{
+    font-size: 18px;
+  }
+  .form-search__col{
+    width: 44%;
+  }
+  .form-search__label-title{
+    font-size: 13px;
+  }
+  .form-search__input{
+    font-size: 13px;
+  }
+  .form-search__example{
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .form-search__label_date{
+    font-size: 13px;
+    width: 28%;
+    margin-right: 8%;
+    margin-bottom: 2%;
+  }
+  .form-search__label-link{
+    left: 72%;
+  }
+  .form-search__label_checkbox{
+    width: 21%;
+    margin-right: 6%;
+    margin-bottom: 2%;
+  }
+  .form-search__currency{
+    width: 17%;
+    margin-right: 10%;
+    &-title{
+      font-size: 13px;
+    }
+  }
+  .form-search__button{
+    padding: 10px 45px;
+  }
+
+}

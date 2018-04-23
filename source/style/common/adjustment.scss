@@ -1,0 +1,30 @@
+body,html{
+  height: 100%;
+  font-family: "Tahoma";
+  font-weight: 400;
+  font-size: 14px;
+}
+.wrapper{
+  position: relative;
+  height: 100%;
+}
+.maincontent{
+  position: relative;
+  min-height: 100%;
+}
+.header{
+  position: relative;
+  height: 105px;
+}
+.container{
+  position: relative;
+  width:960px;
+  padding: 0 50px;
+  margin: auto;
+}
+.section{
+  position: relative;
+}
+*{
+  box-sizing: border-box;
+}

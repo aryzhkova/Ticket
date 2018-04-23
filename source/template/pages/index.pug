@@ -1,0 +1,70 @@
+extends ../_template
+
+block variables
+    - var title = 'Train tickets'
+
+block content
+    .wrapper
+        .maincontent
+            header.header
+                .container
+            section.section.section-menu
+                .container.menu-container
+                    include ../common/nav
+                    .login
+                        a.login__link(href="#" title="Sign in")
+                            span.login__link-icon
+                            span.login__link-title Sign in
+            section.section.section-search
+                .container
+                    h2.title Russian Train Tickets
+                    form.form-search(id="formSearch")
+                        .form-search__row
+                            .form-search__col
+                                label.form-search__label.form-search__label_city(for="departureCity")
+                                    span.form-search__label-title Departure city:
+                                    input.form-search__input(id="departureCity" name="departureCity" type="text" placeholder="Type city name" required)
+                                .form-search__example.form-search__example_departure
+                                    a.form-search__example-link.form-search__example-link_departure(href="#" title="") St.Petersburg
+                                    a.form-search__example-link.form-search__example-link_departure(href="#" title="") Moscow
+                            a.form-search__swap(href="#" title="")
+                            .form-search__col
+                                label.form-search__label.form-search__label_city(for="arrivalCity")
+                                    span.form-search__label-title Arrival city:
+                                    input.form-search__input(id="arrivalCity" name="arrivalCity" type="text" placeholder="Type city name" required )
+                                .form-search__example.form-search__example_arrival
+                                    a.form-search__example-link.form-search__example-link_arrival(href="#" title="") St.Petersburg
+                                    a.form-search__example-link.form-search__example-link_arrival(href="#" title="") Moscow
+                        .form-search__row
+                            label.form-search__label.form-search__label_date(for="departureDate")
+                                span.form-search__label-title Departure date:
+                                input.form-search__input(id="departureDate" name="departureDate" type="text" placeholder="dd.mm.yyyy" required)
+                                a.form-search__label-link.form-search__label-link_date_departure(href="#" title="")
+                            label.form-search__label.form-search__label_checkbox
+                                input.form-search__checkbox(type="checkbox" name="roundTrip" value="roundTrip")
+                                span.fake-style
+                                span.form-search__label-title Roundtrip
+                            label.form-search__label.form-search__label_date.form-search__label_date_return(for="returnDate")
+                                span.form-search__label-title Return date:
+                                input.form-search__input.form-search__input_blue(id="returnDate" name="returnDate" type="text" placeholder="dd.mm.yyyy")
+                                a.form-search__label-link.form-search__label-link_date_return(href="#" title="")
+                            .form-search__currency
+                                span.form-search__currency-title Currency:
+                                .form-search__currency-input
+                                a.form-search__currency-ddlink(href="#" title="")
+                                select(id="select")
+                                    option(value="usd") usd
+                                    option(value="rub" selected="selected") rub
+                                    option(value="gbr") gbr
+                                    option(value="eur") eur
+                                    option(value="chf") chf
+                            button.form-search__button
+                                span.form-search__button-icon
+                                span.form-search__button-title Search
+
+
+
+
+
+
+        footer.footer

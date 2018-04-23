@@ -1,0 +1,46 @@
+nav.nav.nav_position_horizontal
+    a.nav__hamburger(href="#" title="") Menu
+    ul.nav-group.nav-group_position_horizontal.nav-group_position_vertical
+        -
+            navGroupItems=[
+            {
+            title:"Search tickets",
+            navItems:[]
+            },
+            {
+            title:"Sapsan",
+            navItems:[]
+            },
+            {
+            title:"Allegro",
+            navItems:[]
+            },
+            {
+            title:"Trans-siberian",
+            navItems:["Group travel", "Ticket types", "Child policy", "Change ticket request", "Cancel tickets"]
+            },
+            {
+            title:"Faq",
+            navItems:["Group travel", "Ticket types", "Child policy", "Change ticket request", "Cancel tickets"]
+            },
+            {
+            title:"Tickets guide",
+            navItems:["Group travel", "Ticket types", "Child policy", "Change ticket request", "Cancel tickets"]
+            },
+            {
+            title:"Contacts us",
+            navItems:["Group travel", "Ticket types", "Child policy", "Change ticket request", "Cancel tickets"]
+            }
+
+            ]
+        each navGroupItem in navGroupItems
+            li.nav-group__item.nav-group__item_position_horizontal.nav-group__item_position_vertical
+                a.nav-group__link(href="#" title=navGroupItem.title)
+                    span.nav-group__link-title=navGroupItem.title
+                if navGroupItem.navItems.length
+                    a.nav-group__link-triangle.nav-group__link-triangle_position_vertical(href="#" title="")
+                ul.nav-list.nav-list_position_horizontal.nav-list_position_vertical
+                    each navItem in navGroupItem.navItems
+                        li.nav__item.nav__item_position_horizontal
+                            a.nav__link(href="#" title=navItem)
+                                span.nav__link-title=navItem

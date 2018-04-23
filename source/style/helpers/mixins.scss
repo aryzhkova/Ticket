@@ -1,0 +1,26 @@
+//colors
+$light_grey: #bfd8eb;
+$light_blue: #54add8;
+$blue: #1395d3;
+$dark_blue: #0085c5;
+$white: #ffffff;
+$orange: #f75c00;
+$grey: #D7D7D7;
+$black: #000000;
+$dark_grey: #a9a9a9;
+$indigo:#0076AD;
+
+
+%clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+
+//fonts
+
+
+

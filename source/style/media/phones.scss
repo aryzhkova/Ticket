@@ -1,0 +1,35 @@
+@media screen and (min-device-width: 320px) and (max-width: 480px ){
+  .wrapper{
+    min-width: 480px;
+  }
+  .container{
+    width:90%;
+  }
+  .title{
+    font-size: 16px;
+  }
+  .form-search__col{
+    width: 90%;
+    margin-right: 0;
+    margin-bottom: 2%;
+  }
+  .form-search__swap{
+    line-height: 27px;
+    margin-left: -11%;
+    &:hover{
+      background-position: 0 -36px;
+    }
+  }
+  .form-search__label_date{
+    width: 30%;
+    margin-right: 5%;
+  }
+  .form-search__label_checkbox{
+    width:23%;
+    margin-right: 3%;
+  }
+  .form-search__button{
+    padding: 5px 40px;
+  }
+
+}
